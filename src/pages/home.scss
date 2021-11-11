@@ -1,1 +1,46 @@
 @import "../shared/helper";
+
+.home{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    >header{
+    height: px(99);
+    background-size: cover;
+    }
+
+    >main{
+        flex: 1;
+        display: grid;
+        grid-gap: px(20);
+        grid-template: 
+        "box1 box2 box4 box5" 750fr
+        "box3 box3 box4 box5" 370fr / 370fr 370fr 810fr 700fr
+        ;
+        >.section1{
+           grid-area: box1; //注意，没有双引号
+           background-color: green;
+        }
+        >.section2{
+            grid-area: box2;
+            background-color: white;
+        }
+        >.section3{
+            grid-area: box3;
+            background-color: purple;
+        }
+        >.section4{
+            grid-area: box4;
+            background-color: gray;
+        }
+        >.section5{
+            grid-area: box5;
+            background-color:pink;
+        }
+    }
+}
+
+
+  
+  

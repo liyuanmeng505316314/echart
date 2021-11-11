@@ -11,7 +11,6 @@ function App() {
       <HashRouter>
         <Switch>
           <Route exact path="/"> 
-
             <Home/>
           </Route>
           <Route exact path="/config">
